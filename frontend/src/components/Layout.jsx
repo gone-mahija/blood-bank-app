@@ -79,7 +79,7 @@ const Layout = ({ children }) => {
                     </Toolbar>
                 </AppBar>
 
-                {/* Space below AppBar */}
+                
                 <Toolbar />
                 {children}
             </Box>
