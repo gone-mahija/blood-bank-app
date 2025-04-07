@@ -14,7 +14,7 @@ const AdminRoute = ({ children }) => {
     try {
         const decoded = jwtDecode(token);
         if (decoded.role !== 'admin') {
-            return <Navigate to="/not-authorized" />; // 👈 redirect if not admin
+            return <Navigate to="/not-authorized" />;
         }
         return children;
     } catch (error) {
