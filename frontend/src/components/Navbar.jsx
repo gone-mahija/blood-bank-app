@@ -10,7 +10,7 @@ const Navbar = () => {
     let user = null;
     try {
         if (token) {
-            user = jwtDecode(token); // ✅ correct usage
+            user = jwtDecode(token); 
         }
     } catch (err) {
         console.error("Error decoding token:", err.message);
